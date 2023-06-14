@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  h1 {
+    color: red;
+    font-style: italic;
+  }
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px 20px;
+  }
+  input[type="submit"],
+  button {
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.8s linear;
+  }
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: aqua;
+    color: red;
+  }
+  label {
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  span {
+    padding: 10px;
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .login1 {
+    background: url("images/171219-teacher-stock.jpg");
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 100px;
+  }

@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+div.container {
+    padding: 10px 5px;
+    overflow: auto;
+    height: auto;
+    background-color: gray;
+}
+
+.document {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.container-child {
+    margin-left: 1px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-child a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.container-child a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width:819px) {
+    div.container {
+        padding-left: 80px;
+        border: none;
+        position: static;
+        width: 100%;
+    }
+
+    .container-child {
+        margin: 5px;
+        display: block;
+        width: 50%;
+        border-bottom: 1px solid white;
+        transform: translateX(1px);
+        transition: all 0.8s linear;
+        background-color: red;
+
+    }
+
+    .container-child:hover {
+        transform: translateX(140px);
+        background-color: blue;
+    }
+
+    .container-child a {
+        color: white;
+    }
+}
+
+#about {
+    padding: 20px;
+}
+
+#about h1 {
+    color: red;
+    background-color: aliceblue;
+    text-align: center;
+
+}
+
+#about p {
+    line-height: 25px;
+    white-space: pre-line;
+    padding: 20px 40px;
+    color: red;
+    transform: translateX(2px);
+    border-bottom-left-radius: 50px;
+    transition-property: all;
+    transition-duration: 0.88888s;
+    transition-timing-function: linear;
+
+}
+
+#about p::first-letter {
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 2px 2px 6px powderblue;
+}
+
+#about p:hover {
+    opacity: 0.8;
+    color: black;
+    transform: translateX(200px);
+}
+
+#Courese {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin: 5px;
+    color: rgb(10, 45, 242);
+    background-color: rgba(240, 128, 128, 0.214);
+    transition-property: color, padding, box-shadow;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+}
+
+.item:hover {
+    color: black;
+    padding: 40px;
+    box-shadow: 0px 400px 0px lightblue inset;
+}
+
+h6 {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#teacher {
+    overflow: auto;
+    margin: 5px;
+}
+
+.teacher-name {
+    text-align: center;
+    height: auto;
+    width: 32%;
+    float: left;
+    margin: 8px;
+    transition-property: box-shadow, padding;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.teacher-name:hover {
+    box-shadow: 100px 800px 0px green inset;
+}
+
+@media only screen and (max-width:900px) {
+    .teacher-name {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:819px) {
+    .teacher-name {
+        width: 80%;
+    }
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+
+}
+
+#Student {
+    overflow: auto;
+    padding: 10px;
+}
+
+.Top-student {
+    float: left;
+    width: 410px;
+    margin: 2px;
+    text-align: center;
+}
+
+img.student-class {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+}
+
+td,
+table {
+    padding: 2px;
+
+}
+
+tr:hover {
+    background-color: darkturquoise;
+
+}
+
+.style {
+    padding-left: 60px;
+}
+
+@media only screen and (max-width:820px) {
+    #Student {
+        text-align: center;
+    }
+
+}
+
+strong {
+    color: red;
+
+}
+
+#fone.span1 {
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+
+}
+
+div a {
+    text-decoration-line: none;
+    text-align: center;
+    color: white;
+
+}
+
+div a:hover {
+    color: black;
+}
+
+#fone.span1:hover {
+    background-color: White;
+
+}
+
+strong#coaching::first-letter {
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 5px 5px 5px red;
+
+}
+
+.grid-container {
+    padding: 10px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
+}
+
+.grid-item {
+    height: auto;
+    padding: 5px;
+    margin: auto;
+
+}
+
+table.feesCourse,
+th {
+    border-collapse: collapse;
+    border: 1px solid black;
+
+}
+
+th {
+    text-align: center;
+    border-right: 1px solid black;
+    padding: 1px;
+    color: black;
+    font-weight: normal;
+    vertical-align: center;
+    height: 50px;
+}
+
+table.feesCourse tr:hover {
+    background-color: green;
+
+
+}
+
+@media only screen and (max-width:819px) {
+    .grid-container {
+        width: 100%;
+    }
+}
+
+ul#unorder {
+    overflow: auto;
+
+}
+
+li.list1 {
+    float: left;
+    margin: 3px;
+}
+
+@media (max-width:819px) {
+    li.list1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    ul#unorder {
+        text-align: center;
+    }
+}
+
+img {
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+img:hover {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+div#Admission {
+    padding: 20px;
+    background-image: linear-gradient(to top left, lightgrey, lightblue, blue);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width:819px) {
+    div#Admission {
+        width: 100%;
+    }
+}
+
+ul#form1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+form.RegisteraionForm {
+    padding: 20px;
+    transition:all 0.8s linear;
+
+   
+}
+label{
+    color:red
+}
+form.RegisteraionForm:hover
+ {
+    opacity: 0.5;
+
+
+}
+
+input[type="text"] {
+    padding: 10px;
+
+}
+
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+}
+
+select {
+    padding: 4px;
+    margin-left: 15px;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid black;
+    margin: 2px;
+    font-weight: bold;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border: none; 
+    border-radius: 20px;
+    background-color: transparent;
+    transition:all 0.8s linear;
+   
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color:black;
+    color: white;
+    border-radius: 20px;
+}
+
+li {
+    margin: 1px;
+}
